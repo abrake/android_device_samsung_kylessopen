@@ -23,7 +23,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a5
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := cortex-a5
 ARCH_ARM_HAVE_NEON := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp
@@ -37,7 +37,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_kylessopen_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_kyle02_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/kylessopen
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := sabermod-arm-eabi-4.7
 TARGET_BOOTLOADER_BOARD_NAME := kylessopen
@@ -98,20 +98,20 @@ BOARD_HAVE_QCOM_MR1_FM := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_MR1_FM
 
 # Wi-Fi
-# BOARD_WLAN_DEVICE := ath6kl
-# BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-# BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_ath6kl
-# BOARD_HOSTAPD_DRIVER := NL80211
-# BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_ath6kl
-# WPA_SUPPLICANT_VERSION := VER_0_8_X
-# WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/ath6kl_sdio.ko"
-# WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
-# WIFI_EXT_MODULE_PATH := "/system/lib/modules/cfg80211.ko"
-# WIFI_EXT_MODULE_NAME := "cfg80211"
-# WIFI_TEST_INTERFACE := "sta"
-# WIFI_DRIVER_FW_PATH_STA := "sta"
-# WIFI_DRIVER_FW_PATH_AP  := "ap"
-# WIFI_DRIVER_FW_PATH_P2P := "p2p"
+BOARD_WLAN_DEVICE := ath6kl
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_ath6kl
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_ath6kl
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/ath6kl_sdio.ko"
+WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
+WIFI_EXT_MODULE_PATH := "/system/lib/modules/cfg80211.ko"
+WIFI_EXT_MODULE_NAME := "cfg80211"
+WIFI_TEST_INTERFACE := "sta"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WIFI_DRIVER_FW_PATH_AP  := "ap"
+WIFI_DRIVER_FW_PATH_P2P := "p2p"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
